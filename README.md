@@ -6,9 +6,11 @@
   Echo-Bot using the WhatsDapp library.
 </p>
 
+# WhatsDapp Echo-Bot
+
 This development uses the [WhatsDapp library](https://github.com/realKidDouglas/whatsdapp-lib) to answer on every message for test and demo purpose.
 
-# Running instance
+## Running instance
 
 There is a running instance with the identity `5LFWVvzMkiSJKFjuAGqSNUuMcA3hB1kS8Buw355VrzbM`.
 If you have an initialized whatsDapp object `messenger` you can send messages acc. to [WhatsDapp's documentation](https://github.com/realKidDouglas/whatsdapp-lib):
@@ -19,9 +21,12 @@ Echo bot will answer as soon as it can ;)
 
 If there is any trouble with this echo bot instance, just ping us on [Dash Devs Discord](https://chat.dashdevs.org/) on channel `#private-messenger`.
 
-# Set Credentials
+
+# Usage
 
 Pre: You'll need a `testnet` Mnemonic and at least one toped up identity (see tutorials [here](https://dashplatform.readme.io/docs/tutorials-introduction)).
+
+## Set Credentials
 
 Edit `chatbot.js` and set the fields:
 ```
@@ -35,7 +40,7 @@ The supplied storage here (`LocalStorageClear`) does not have to be used.
 You can use any key-value store according to whatsDapp's interface (`KVStore` defined in [`StructuredStorage`](https://github.com/realKidDouglas/whatsdapp-lib/blob/master/src/storage/StructuredStorage.ts)).
 This one ist very easy and practicable for development.
 
-# Run without Docker
+## Run without Docker
 
 To install dependencies: 
 ```
@@ -47,7 +52,7 @@ To run:
 node chatbot.js
 ```
 
-# Run with Docker
+## Run with Docker
 
 Run from root directory of this repo:
 ```
@@ -61,7 +66,7 @@ docker run -v ./storage:/storage -d whatsdapp-chatbot
 (Install [Docker](https://docs.docker.com/get-docker/))
 
 
-## Docker-Compose
+### Docker-Compose
 
 Easier it gets with Docker-Compose.
 All in one step is to use `docker-compose` from root directory of this repo: 
@@ -78,7 +83,7 @@ docker-compose up -d --build
 (Install [Docker-Compose](https://docs.docker.com/compose/install/))
 
 
-## Logs
+### Logs
 
 Find `<CONTAINER-NAME OR ID>` by running:
 ```
