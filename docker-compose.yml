@@ -1,0 +1,10 @@
+version: '3'
+services:
+  whatsdapp_chatbot:
+    build: .
+    container_name: whatsdapp_chatbot_storage_vol
+    restart: unless-stopped
+    volumes:
+      - ./storage:/storage:rw
+    dns:
+      - 8.8.8.8

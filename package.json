@@ -1,0 +1,16 @@
+{
+  "name": "whatsdapp-chatbot",
+  "version": "1.0.0",
+  
+  "description": "WhatsDapp Echo-Bot. Answering each message.",
+  "homepage": "https://github.com/realKidDouglas/whatsdapp-chatbot",
+
+  "keywords": [Dash Platform, WhatsDapp, Private Messaging],
+  "author": "the WhatsDappers",
+  "license": "MIT",
+
+  "dependencies": {
+    "whatsdapp": "^1.0.18",
+    "fs-extra": "9.0.1"
+  }
+}
